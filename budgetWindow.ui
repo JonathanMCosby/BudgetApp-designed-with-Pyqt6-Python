@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>budgetWindow</class>
+ <widget class="QMainWindow" name="budgetWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0.311828 rgba(118, 255, 163, 252), stop:0.688172 rgba(65, 183, 60, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>0</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none;
+color: rgb(255,255,255);
+</string>
+    </property>
+    <property name="text">
+     <string>Made By: Jonathan Cosby</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="titleLbl">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>50</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(118,255,163) ;
+font-size: 32px;
+font: italic bold;
+color: rgb(65,183,60);
+padding-left: 15px;
+padding-right: 15px;
+border-radius: 25px</string>
+    </property>
+    <property name="text">
+     <string>BudgetApp</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="primaryIncomeLine">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>240</y>
+      <width>281</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255,255,255);
+border-radius: 25px;
+color: rgb(0,0,0);
+font-size: 20px;
+font: italic bold;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Primary Income</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="primaryIncomeLbl">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>240</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(118,255,163) ;
+font-size: 24px;
+font: italic bold;
+color: rgb(65,183,60);
+padding-left: 15px;
+padding-right: 15px;
+border-radius: 25px;</string>
+    </property>
+    <property name="text">
+     <string>Primary Income</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sideIncomeLbl">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>330</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(118,255,163) ;
+font-size: 24px;
+font: italic bold;
+color: rgb(65,183,60);
+padding-left: 15px;
+padding-right: 15px;
+border-radius: 25px;</string>
+    </property>
+    <property name="text">
+     <string>Side Income</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sideIncomeLine">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>330</y>
+      <width>281</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255,255,255);
+border-radius: 25px;
+color: rgb(0,0,0);
+font-size: 20px;
+font: italic bold;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Side Income</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addBtn">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>440</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(65,183,60);
+font: italic bold;
+color: rgb(118,255,163);
+font-size: 20px;
+border-radius: 15px;
+</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteBtn">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>440</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(65,183,60);
+font: italic bold;
+color: rgb(118,255,163);
+font-size: 20px;
+border-radius: 15px;
+</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backBtn">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>440</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(65,183,60);
+font: italic bold;
+color: rgb(118,255,163);
+font-size: 20px;
+border-radius: 15px;
+</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lastEntryDateLbl">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>130</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255,255,255);
+font: italic bold;
+font-size: 15px;
+color: rgb(0,0,0);
+padding-left: 10px;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Last Entry Date: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lastIncomeLbl">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>180</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255,255,255);
+font: italic bold;
+font-size: 15px;
+color: rgb(0,0,0);
+padding-left: 10px;
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string>Last Total Income: </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>680</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../test.qrc"/>
+ </resources>
+ <connections/>
+</ui>
