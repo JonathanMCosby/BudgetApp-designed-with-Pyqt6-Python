@@ -17,4 +17,3 @@ wants DECIMAL (10,2),
 save DECIMAL (10,2),
 date DATETIME DEFAULT CURRENT_TIMESTAMP NULL
 );
-DROP TABLE budgetProgram.table;
